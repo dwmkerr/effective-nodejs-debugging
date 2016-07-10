@@ -30,21 +30,25 @@ var getPerson = (id) => {
 };
 
 //  Define routes. Only route is 'search'
-server.route[{
-  method: 'GET',
-  path: '/search',
-  handler: (request, reply) => {
-    getPerson(request.params.id)
-      .then((person) => reply(person))
-      .catch(() => reply("Can't find that Simpson...").code(404));
+server.route([
+  {
+    method: 'GET',
+    path: '/',
+    handler: (request, reply) => {
+      reply("Ello guvner");
+    }
+  },{
+    method: 'GET',
+    path: '/search',
+    handler: (request, reply) => {
+      getPerson(request.params.id)
+        .then((person) => reply(person))
+        .catch(() => reply("Can't find that Simpson...").code(404));
+    }
   }
-}]);
+]);
 
-server.register([], (err) => {
-  if (err) throw err;
-
-  server.start((err) => {
-    if(err) throw err;
-    console.log("Server running at: " + server.info.uri);
-  });
+server.start((err) => {
+  if(err) throw err;
+  console.log("Server running at: " + server.info.uri);
 });
