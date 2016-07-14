@@ -10,6 +10,7 @@ RUN npm install --production
 
 # Expose our server port.
 EXPOSE 8123
+EXPOSE 8080
 
 # Run our app.
-CMD ["npm", "start"]
+CMD ["npm", "run", "debug"]
