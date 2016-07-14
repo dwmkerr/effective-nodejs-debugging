@@ -35,7 +35,11 @@ server.route([
     method: 'GET',
     path: '/',
     handler: (request, reply) => {
-      reply("Ello guvner");
+      reply(`
+        ****************
+        Hello JSChannel!
+        ****************
+        `);
     }
   },{
     method: 'GET',

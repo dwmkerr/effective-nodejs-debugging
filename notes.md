@@ -44,6 +44,15 @@
 - . Inline expressions
 - . Inspectors
 
+# Demo1
+1. Open server.js
+2. Walk through all the code
+3. Demo working route
+4. Demo non-working route
+5. Inspect code again
+6. Discuss options - logging, console, etc etc
+7. Demo the best option - node debug
+8. Demo checking the code, stepping through, 
 # An example with testing
 - The same server, with some unit tests
 - Demonstrate the tests are working except for one

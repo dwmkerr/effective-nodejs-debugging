@@ -13,3 +13,11 @@ TODO
 # Notes
 
 TODO
+
+# TODO
+
+[ ] Support light themes in case the projector doesn't work
+[ ] Ensure dotfiles are up to date for demos
+[ ] Email team RE contact details etc
+[ ] Publicise via Twitter etc
+[ ] Support the 'open in same folder'
