@@ -9,6 +9,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "debug": "node-debug index.js",
     "test": "mocha -R spec **/*.spec.js",
     "lint": "eslint ."
   },

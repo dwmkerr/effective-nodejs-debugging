@@ -5,12 +5,14 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
+    "debug": "node-debug --save-live-edit server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "hapi": "^13.5.0",
+    "node-inspector": "^0.12.8",
     "nodemon": "^1.9.2"
   }
 }
