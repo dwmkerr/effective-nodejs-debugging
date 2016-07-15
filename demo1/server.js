@@ -45,7 +45,10 @@ server.route([
     method: 'GET',
     path: '/search',
     handler: (request, reply) => {
-      getPerson(parseInt(request.query.id))
+      // This is the broken line! We should be using request.query and parseInt...
+      getPerson(request.params.id)
+      //  ...like this!
+      //  getPerson(parseInt(request.query.id))
         .then((person) => reply(person))
         .catch(() => reply("Can't find that Simpson...").code(404));
     }

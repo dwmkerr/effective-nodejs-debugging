@@ -8,9 +8,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "debug": "node-debug index.js",
+    "start": "node index.js",
     "test": "mocha -R spec **/*.spec.js",
+    "debug": "node-debug index.js",
     "lint": "eslint ."
   },
   "author": "Dave Kerr, dwmkerr@gmail.com",
@@ -21,6 +21,7 @@
     "mysql": "^2.10.2",
     "node-inspector": "^0.12.8",
     "nodemon": "^1.9.2"
+    "mysql": "^2.10.2"
   },
   "devDependencies": {
     "eslint": "^2.7.0",
